@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Express</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+    </head>
+    <body>
+        <h3>
+           Complete Match   (<%=complete.length%>)
+        </h3>
+        <% complete.forEach(function(word){ %>
+        <li> <%=word['Keyword']%></li>   
+        <%}); %>
+        <h3>
+           Partial Match   (<%=partial.length%>)
+        </h3>
+        <% partial.forEach(function(word){ %>
+        <li> <%=word['Keyword']%></li>   
+        <%}); %>
+    </body>
+</html>
